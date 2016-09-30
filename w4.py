@@ -1,3 +1,4 @@
-mystring = "scrum-1333"
+mystring = "scrum-1"
 print(mystring)
+
 
