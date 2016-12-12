@@ -16,8 +16,6 @@ brython(1);
 }
 &lt;/script&gt;
 
-&lt;!-- 以下實際利用  Brython 畫圖 --&gt;
-
 &lt;div id="ex1"&gt;&lt;/div&gt;
 
 &lt;script type="text/python3"&gt;
@@ -25,6 +23,20 @@ from browser import document as doc
 container = doc['ex1']
 
 container &lt;= "W14 練習"
+&lt;/script&gt;
+
+&lt;div id="ex2"&gt;&lt;/div&gt;
+
+&lt;script type="text/python3"&gt;
+from browser import document as doc
+from browser import html
+container = doc['ex2']
+mystring = input("要印出甚麼字串?")
+mynum = input("要印幾次?")
+
+for i in range(int(mynum)):
+    #container &lt;= "W14 練習-2" + html.BR()
+    container &lt;= mystring + html.BR()
 &lt;/script&gt;</summary><category term="每週練習"></category></entry><entry><title>2016Fall 簡報與網誌系統</title><link href="./2016fall-jian-bao-yu-wang-zhi-xi-tong.html" rel="alternate"></link><published>2016-09-02T12:00:00+08:00</published><updated>2016-09-02T12:00:00+08:00</updated><author><name>yen</name></author><id>tag:,2016-09-02:./2016fall-jian-bao-yu-wang-zhi-xi-tong.html</id><summary type="html">&lt;p&gt;這個系統共集結了 reveal.js 網際簡報與 pelican 靜態網誌系統.&lt;/p&gt;
 
 
